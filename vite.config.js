@@ -6,6 +6,9 @@ export default defineConfig({
     plugins: [react()],
     build: {
         outDir: 'dist',
+        assetsDir: 'assets',
+        chunkFileNames: 'assets/[name]-[hash].js',
+        entryFileNames: 'assets/[name]-[hash].js',
     },
 });
 
